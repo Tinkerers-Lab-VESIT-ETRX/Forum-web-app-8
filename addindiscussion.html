@@ -1,0 +1,22 @@
+<head>
+    <style>
+        form{
+            border:5px solid black;
+            margin: auto;
+            padding: 60px;
+            width: auto;
+            height: 800px;
+            background-color:paleturquoise;
+            font-size:23;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"0>
+</head>
+
+
+<form  method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-success" value="Comment">
+    
+</form>
